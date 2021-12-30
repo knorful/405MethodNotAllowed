@@ -2,31 +2,31 @@
 
 This tool creates a function signature for a SpringBoot ReST enpoint from your command line. Below are some examples of how this tool works:
 
-##Input:
+## Input:
 
 <code>
-HTTP Method: GET
-URI: api/v1/products/{productId}/stuff?page=page&size=size
-Model: None
-Name: getAllProducts
-Return: List<Product>
+HTTP Method: GET<br>
+URI: api/v1/products/{productId}/stuff?page=page&size=size<br>
+Model: None<br>
+Name: getAllProducts<br>
+Return: List<Product><br>
 </code>  
   
-##Output:
+## Output:
 
-@GetMapping("api/v1/products/{productId}/stuff")  //?page=page&size=size
-public List<Product> getAllProducts(@PathVariable productID, @RequestParam int page, @RequestParam int size) {
+@GetMapping("api/v1/products/{productId}/stuff")  //?page=page&size=size<br>
+public List<Product> getAllProducts(@PathVariable productID, @RequestParam int page, @RequestParam int size) {<br>
 
   
-##Input:
+## Input:
 
-HTTP Method: POST
-URI: api/v1/products/
-Model: Product
-Name: addProduct
-Return: Product
+HTTP Method: POST<br>
+URI: api/v1/products/<br>
+Model: Product<br>
+Name: addProduct<br>
+Return: Product<br>
 
-##Output:
+## Output:
 
-@PostMapping("api/v1/products/")
-public Product getAllProducts(@RequestBody Product product) {
+@PostMapping("api/v1/products/")<br>
+public Product getAllProducts(@RequestBody Product product) {<br>
